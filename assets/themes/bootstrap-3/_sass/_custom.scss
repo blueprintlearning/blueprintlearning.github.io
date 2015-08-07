@@ -1,5 +1,5 @@
 $gutter: $grid-gutter-width;
-$brand-complement: invert($brand-primary);
+$brand-complement: #EE8846;
 
 body {
   font-weight: 200;
@@ -75,6 +75,9 @@ a {
   }
   a {
     color: white;
+  }
+  .btn-primary {
+    background-color: $brand-complement;
   }
 }
 
