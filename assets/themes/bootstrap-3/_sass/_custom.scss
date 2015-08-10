@@ -1,12 +1,37 @@
 $gutter: $grid-gutter-width;
 $brand-complement: #EE8846;
 
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: $brand-complement;
+  box-shadow: none;
+  outline: 0 none;
+}
+
 body {
   font-weight: 200;
 }
 
-a {
+a, label {
   font-weight: 400;
+}
+
+strong {
+  font-weight: 500;
 }
 
 .navbar a {
@@ -15,6 +40,12 @@ a {
     font-weight: normal;
   }
 }
+
+.media {
+  margin-bottom: $gutter;
+}
+
+// Custom helpers
 
 .btn-transparent {
   color: #fff;
@@ -27,9 +58,20 @@ a {
   }
 }
 
+.color-complement {
+  color: $brand-complement;
+}
+
+.color-primary {
+  color: $brand-primary;
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
 /* Custom container */
 
-/* Replaced with normal container and standard footer */
 .container-narrow {
   margin: 0 auto;
   max-width: 900px;
@@ -38,10 +80,6 @@ a {
 .container-narrow > hr {
   margin: 30px 0; 
 }
-
-/* Replaced with standard BS3 Navbar */
-/*.navbar .nav {
-  float: right; }*/
 
 .page-header {
   background-color: $brand-primary;
@@ -52,13 +90,16 @@ a {
 #footer {
   margin-top: $gutter;
   padding: 40px 0;
-  background-color: $gray-lighter;
-  border-top: 1px solid darken($gray-lighter,15%);
+  // background-color: $gray-lighter;
+  // border-top: 1px solid darken($gray-lighter,15%);
 }
 
 .featurette {
   padding: $gutter*2 0;
   border-bottom: 1px solid $gray-lighter;
+  &:last-child {
+    border-bottom: 0;
+  }
 }
 
 .custom-jumbotron {
@@ -69,7 +110,7 @@ a {
 
 .custom-jumbotron-inner {
   padding-top: $gutter*2;
-  background-color: rgba($brand-primary,0.7);
+  background-color: rgba($brand-primary,0.9);
   p {
     color: darken(white,10%);
   }
@@ -99,7 +140,7 @@ a {
     margin-top: 0;
   }
   &:hover {
-    background-color: rgba($brand-primary,0.4);
+    background-color: rgba(darken($brand-primary,20%),0.4);
   }
 }
 
