@@ -1,5 +1,4 @@
 $gutter: $grid-gutter-width;
-$brand-complement: #EE8846;
 
 textarea:focus,
 input[type="text"]:focus,
@@ -32,6 +31,10 @@ a, label {
 
 strong {
   font-weight: 500;
+}
+
+.navbar-brand {
+  padding: 10px 15px;
 }
 
 .navbar a {
@@ -120,6 +123,9 @@ strong {
   }
   .btn-primary {
     background-color: $brand-complement;
+    &:hover {
+      background-color: darken($brand-complement,10%);
+    }
   }
 }
 

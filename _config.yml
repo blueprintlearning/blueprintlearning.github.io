@@ -25,7 +25,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.io
+production_url : http://blueprintlearning.github.io
 
 sass:
   sass_dir: assets/themes/bootstrap-3/_sass
@@ -127,8 +127,8 @@ JB :
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:
   #
-  #   pages_list :
-  #     provider : "custom"   
+  pages_list :
+    provider : "custom"
   #
   # Setting any helper's provider to 'custom' will bypass the helper code
   # and include your custom code. Your custom file must be defined at:
