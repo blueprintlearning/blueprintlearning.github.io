@@ -37,7 +37,7 @@ hide_header: true
 				<br>
 			</div>
 			<div class="col-md-6 text-center">
-				<img src="http://placehold.it/400x250" alt="">
+				<img src="../assets/images/gray/browser-web-content.svg" alt="" height="250">
 			</div>
 		</div>
 	</div>
@@ -64,7 +64,7 @@ hide_header: true
 	<div class="container featurette">
 		<div class="row">
 			<div class="col-md-6">
-				<p class="pre-header">Something</p>
+				<p class="pre-header">All-in-one</p>
 				<h3>Do it all with one platform</h3>
 				<p>Blueprint Open Academy handles all the hassles of teaching online classes, perfect for beginners and experts alike. It is the new home for your education business.</p>
 				<br>
@@ -79,34 +79,45 @@ hide_header: true
 
 <div class="container-fluid">
 	<div class="container featurette">
-	<div class="row ">
-		<div class="col-md-12 text-center">
-			<h2>Digitize Learning</h2>
-			<p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			<br>
-			<br>
-		</div>
-		<div class="col-md-12">
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					
-					{% for feature in site.data.features %}
-						<div class="col-sm-6">
-							<div class="media">
-							  <div class="media-left">
-							    <i class="fa fa-fw fa-lg color-complement fa-{{ feature.icon }}"></i>
-							  </div>
-							  <div class="media-body">
-							    <p><strong>{{ feature.title }}</strong></p>
-							    {{ feature.content }}
-							  </div>
+		<div class="row ">
+			<div class="col-md-12 text-center">
+				<h2>Digitize Learning</h2>
+				<p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<br>
+				<br>
+			</div>
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						
+						{% for feature in site.data.features %}
+							<div class="col-sm-6">
+								<div class="media">
+								  <div class="media-left">
+								    <i class="fa fa-fw fa-lg color-complement fa-{{ feature.icon }}"></i>
+								  </div>
+								  <div class="media-body">
+								    <p><strong>{{ feature.title }}</strong></p>
+								    {{ feature.content }}
+								  </div>
+								</div>
 							</div>
-						</div>
-					{% endfor %}
+						{% endfor %}
 
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+<div class="container-fluid bg-primary">
+	<div class="container featurette">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h3 class="no-margin-top">Start your online academy today</h3><br>
+				<a href="#" class="btn btn-transparent btn-lg">Schedule a demo</a>
+			</div>
+		</div>
+	</div>
 </div>

@@ -78,6 +78,7 @@ img {
 }
 
 .pre-header {
+  margin: $gutter/2 0;
   font-size: 0.8em;
   font-weight: 500;
   text-transform: uppercase;
@@ -105,9 +106,9 @@ img {
 #footer {
   margin-top: $gutter;
   padding: 40px 0;
-  background-color: $brand-primary;
-  color: white;
-  // border-top: 1px solid darken($gray-lighter,15%);
+  // background-color: #f9f9f9;
+  // color: white;
+  // border-top: 1px solid darken(#f9f9f9,15%);
 }
 
 .featurette {
