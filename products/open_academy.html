@@ -1,0 +1,106 @@
+---
+layout: page
+title: Open Academy 
+header: Open Academy
+group: products
+hide_header: true
+---
+{% include JB/setup %}
+
+<div class="custom-jumbotron" style="background-image: url('../assets/images/balloons.jpeg');">
+	<div class="custom-jumbotron-inner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2>Blueprint {{ page.title }}</h2>
+					<p class="lead">
+						Create and sell courses online
+					</p>
+					<br>
+					<br>
+					<br>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid" style="background-color:#f7f7f7;">
+	<div class="container featurette">
+		<div class="row">
+			<div class="col-md-6">
+				<p class="pre-header">Hit the ground running</p>
+				<h3>A beautiful academy from day one</h3>
+				<p>You have complete control over the look and feel of your online academy, from its domain name to its layout, colors and content - customize it any way you like.</p>
+			</div>
+			<div class="col-md-6 text-center">
+				<img src="http://placehold.it/400x250" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="container featurette">
+		<div class="row">
+			<div class="col-md-6 text-center">
+				<img src="http://placehold.it/400x250" alt="">
+			</div>
+			<div class="col-md-6">
+				<p class="pre-header">Fast and scalable</p>
+				<h3>Grow your education business</h3>
+				<p>Blueprint Open Academy fits your business, whether you are a weekend tutor, or a big brand name. There's no limit to the number or type of courses you can teach in your online academy.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid" style="background-color:#f7f7f7;">
+	<div class="container featurette">
+		<div class="row">
+			<div class="col-md-6">
+				<p class="pre-header">Something</p>
+				<h3>Do it all with one platform</h3>
+				<p>Blueprint Open Academy handles all the hassles of teaching online classes, perfect for beginners and experts alike. It is the new home for your education business.</p>
+			</div>
+			<div class="col-md-6 text-center">
+				<img src="http://placehold.it/400x250" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="container featurette">
+	<div class="row ">
+		<div class="col-md-12 text-center">
+			<h2>Digitize Learning</h2>
+			<p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<br>
+			<br>
+		</div>
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					
+					{% for feature in site.data.features %}
+						<div class="col-sm-6">
+							<div class="media">
+							  <div class="media-left">
+							    <i class="fa fa-fw fa-lg color-complement fa-{{ feature.icon }}"></i>
+							  </div>
+							  <div class="media-body">
+							    <p><strong>{{ feature.title }}</strong></p>
+							    {{ feature.content }}
+							  </div>
+							</div>
+						</div>
+					{% endfor %}
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
