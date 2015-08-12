@@ -17,7 +17,7 @@ hide_header: true
 					</p>
 					<a href="#schedule_demo" class="btn btn-md btn-primary">Schedule a demo</a> 
 					<a href="#learn_more" class="btn btn-md btn-transparent">Learn more</a>
-					<br><br><br><br>
+					<br><br><br><br><br>
 				</div>
 			</div>
 			<div class="row">
@@ -42,82 +42,3 @@ hide_header: true
 		</div>
 	</div>
 </div>
-
-<div id="learn_more" class="container featurette">
-	<div class="row ">
-		<div class="col-md-12 text-center">
-			<h2>Digitize Learning</h2>
-			<p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			<br>
-			<br>
-		</div>
-		<div class="col-md-12">
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					
-					{% for feature in site.data.features %}
-						<div class="col-sm-6">
-							<div class="media">
-							  <div class="media-left">
-							    <i class="fa fa-fw fa-lg color-complement fa-{{ feature.icon }}"></i>
-							  </div>
-							  <div class="media-body">
-							    <p><strong>{{ feature.title }}</strong></p>
-							    {{ feature.content }}
-							  </div>
-							</div>
-						</div>
-					{% endfor %}
-
-				</div>
-			</div>
-		</div>
-		
-	</div>
-</div>
-
-<div id="schedule_demo" class="container featurette">
-	<div class="row">
-		<div class="col-md-10 col-md-offset-1">
-			<div class="row">
-				<div class="col-md-6">
-					<h3 class="no-margin-top">Schedule a Demo</h3>
-					<p class="lead text-muted">
-						Please fill in this form and we will get in touch to schedule your live product demo!
-					</p>
-					<p>During the demo we will highlight the important features of the system.</p>
-					<ul>
-						<li>We will take you through different use case scenarios</li>
-						<li>We will demonstrate the system’s functionality</li>
-						<li>We will discuss best practices we have found to be successful</li>
-					</ul>
-					<p>Please feel free to ask any questions you might have regarding e-learning in general or to our products specifically during the demonstration.</p>
-					<br>
-				</div>
-				<div class="col-md-6">
-					<form>
-						<div class="form-group">
-					    <label for="demoName">Name</label>
-					    <input type="text" class="form-control" id="demoName">
-					  </div>
-					  <div class="form-group">
-					    <label for="demoEmail">Email address</label>
-					    <input type="email" class="form-control" id="demoEmail">
-					  </div>
-					  <div class="form-group">
-					    <label for="demoOrganization">Organization</label>
-					    <input type="text" class="form-control" id="demoOrganization">
-					  </div>
-					  <div class="form-group">
-					    <label for="demoPhone">Phone</label>
-					    <input type="text" class="form-control" id="demoPhone">
-					  </div>
-					  <br>
-					  <button type="submit" class="btn btn-primary">Send</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-

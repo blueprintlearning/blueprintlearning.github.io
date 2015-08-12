@@ -19,7 +19,74 @@ hide_header: true
 					<br>
 					<br>
 					<br>
+					<br>
 				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid" style="background-color:#f7f7f7;">
+	<div class="container featurette">
+		<div class="row">
+			<div class="col-md-5">
+				<p class="pre-header">Hit the ground running</p>
+				<h3>A beautiful academy from day one</h3>
+				<p>You have complete control over the look and feel of your online academy, from its domain name to its layout, colors and content - customize it any way you like.</p>
+				<h5>Grow your education business</h5>
+				<p>Blueprint Open Academy fits your business, whether you are a weekend tutor, or a big brand name. There's no limit to the number or type of courses you can teach in your online academy.</p>
+				<h5>Do it all with one platform</h5>
+				<p>Blueprint Open Academy handles all the hassles of teaching online classes, perfect for beginners and experts alike. It is the new home for your education business.</p>
+				<br>
+				<br>
+			</div>
+			<div class="col-md-7 text-center">
+				<img src="../assets/images/admin.png" class="img-rounded img-shadow" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="container featurette">
+		<div class="row ">
+			<div class="col-md-12 text-center">
+				<h2>Digitize Learning</h2>
+				<p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<br>
+				<br>
+			</div>
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						
+						{% for feature in site.data.features %}
+							<div class="col-sm-6">
+								<div class="media">
+								  <div class="media-left">
+								    <i class="fa fa-fw fa-lg color-complement fa-{{ feature.icon }}"></i>
+								  </div>
+								  <div class="media-body">
+								    <p><strong>{{ feature.title }}</strong></p>
+								    {{ feature.content }}
+								  </div>
+								</div>
+							</div>
+						{% endfor %}
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid bg-primary">
+	<div class="container featurette">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h3 class="no-margin-top">Start your online academy today</h3><br>
+				<a href="{{ BASE_PATH}}/schedule_demo.html" class="btn btn-complement btn-lg">Schedule a demo</a>
 			</div>
 		</div>
 	</div>
