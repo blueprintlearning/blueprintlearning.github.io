@@ -11,9 +11,9 @@ highlighter: pygments
 title : Blueprint Learning
 tagline: Site Tagline
 author :
-  name : Blueprint Learning ApS
+  name : Blueprint Learning
   email : blah@email.test
-  github : username
+  github : blueprintlearning
   twitter : username
   feedburner : feedname
 

@@ -77,7 +77,27 @@
 
     <div id="footer">
       <div class="container">
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
+        <div class="row">
+          <div class="col-md-3">
+            <h5>Blueprint Learning</h5>
+            <p>Ny Østergade 3, 5. <br>1101 Copenhagen K <br>Denmark</p>
+            <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
+          </div>
+          <div class="col-md-3">
+            <h5>Products</h5>
+            <ul class="list-unstyled">
+              <li><a href="{{ BASE_PATH }}/products/open_academy.html">Open Academy</a></li>
+              <li><a href="{{ BASE_PATH }}/products/internal_academy.html">Internal Academy</a></li>
+              <li><a href="{{ BASE_PATH }}/products/affiliate_academy.html">Affiliate Academy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>More</h5>
+            <ul class="list-unstyled">
+              <li><a href="{{ BASE_PATH }}/schedule_demo.html">Scedule a demo</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
