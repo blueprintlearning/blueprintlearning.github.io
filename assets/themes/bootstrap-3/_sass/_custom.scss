@@ -53,6 +53,15 @@ img {
   margin-bottom: $gutter;
 }
 
+.navbar > .container .navbar-brand {
+  margin-left: 0;
+}
+
+.btn:active, .btn.active {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
 // Custom helpers
 
 .btn-transparent {

@@ -42,7 +42,6 @@
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
         <div class="row">
-          <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
@@ -55,7 +54,20 @@
                 <img src="{{ BASE_PATH }}/assets/images/logo.png" alt="Blueprint Learning" style="height: 40px;">
               </a>
             </div>
-          </div>
+            <div class="navbar-right">
+            <div class="btn-group" role="group" aria-label="...">
+            {% if site.lang == "en" %}
+              {% capture link1 %}{{ site.baseurl_root }}/da{{ page.url}}{% endcapture %}
+              <a href="{{ link1 }}" class="btn btn-xs btn-default navbar-btn" >Dansk</a>
+              <a href="#" class="btn btn-xs btn-default active navbar-btn" >English</a>
+            {% else if site.lang == "da" %}
+              {% capture link2 %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
+              <a href="#" class="btn btn-xs btn-default active navbar-btn">Dansk</a>
+              <a href="{{ link2 }}" class="btn btn-xs btn-default navbar-btn" >English</a>
+            {% endif %}
+            </div>
+            </div>
+          
         </div>
 
         <div class="row">
@@ -66,7 +78,6 @@
               {% assign group = 'navigation' %}
               {% include JB/pages_list %}
             </ul>
-            <a href="{{ BASE_PATH}}/schedule_demo.html" class="btn btn-complement navbar-btn navbar-right">Get started</a>
             
           </div><!-- /.navbar-collapse -->
         </div>
@@ -84,7 +95,7 @@
             <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
           </div>
           <div class="col-md-3">
-            <h5>Products</h5>
+            <h5>{% t global.products %}</h5>
             <ul class="list-unstyled">
               <li><a href="{{ BASE_PATH }}/products/open_academy.html">Open Academy</a></li>
               <li><a href="{{ BASE_PATH }}/products/internal_academy.html">Internal Academy</a></li>
@@ -92,9 +103,9 @@
             </ul>
           </div>
           <div class="col-md-3">
-            <h5>More</h5>
+            <h5>{% t global.more %}</h5>
             <ul class="list-unstyled">
-              <li><a href="{{ BASE_PATH }}/schedule_demo.html">Scedule a demo</a></li>
+              <li><a href="{{ BASE_PATH }}/schedule_demo.html">{% t global.schedule %}</a></li>
             </ul>
           </div>
         </div>

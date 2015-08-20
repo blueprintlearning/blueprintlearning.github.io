@@ -30,6 +30,8 @@ production_url : http://blueprintlearning.github.io
 sass:
   sass_dir: assets/themes/bootstrap-3/_sass
 
+languages: ["en", "da"]
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
@@ -129,6 +131,8 @@ JB :
   #
   # pages_list :
   #   provider : "custom"
+  setup :
+    provider : "custom"
   #
   # Setting any helper's provider to 'custom' will bypass the helper code
   # and include your custom code. Your custom file must be defined at:
