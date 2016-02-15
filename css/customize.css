@@ -1,0 +1,31 @@
+body {
+  background-color: #446EAE;
+}
+.cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top:0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  display: table;
+  color: white;
+}
+
+.cover-content {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cover-content * {
+  margin-bottom: 20px;
+}
+.cover-content *:last-child {
+  margin-bottom: 0;
+}
+
+.embeded-video, .embeded-video iframe {
+  max-width: 100%;
+}
